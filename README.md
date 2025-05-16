@@ -52,7 +52,7 @@ The question answering prompt we used for all models is included in [prompt.py](
 Once your model predictions on the benchmark are ready, we provide an evaluation script to compute the accuracy of model answers, which is very simple to run. We use `gpt-4.1-mini-2025-04-14` checkpoint from OpenAI as the LLM-as-a-Judge model for our benchmark. Make sure to set up your OpenAI API key in your environment variables.
 
 
-```python
+```bash
 export OPENAI_API_KEY=your_api_key_here
 python evaluate.py --prediction_path /path/to/predictions.json --split dev/test
 ```
@@ -77,7 +77,7 @@ Optionally, you can specify `--save_dir /path/to/save_dir` to save the evaluatio
 
 To demonstrate the evaluation process, we'll use outputs from Claude-3.7-Sonnet on the dev set. The example below shows how to run the evaluation with our provided [example_outputs](example_outputs) (both formatting styles are supported):
 
-```python
+```bash
 export OPENAI_API_KEY=your_api_key_here
 python evaluate.py \
     --prediction_path example_outputs/claude-3-7-sonnet-20250219-dev-full-output.json \
