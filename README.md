@@ -6,6 +6,10 @@
 **ChartMuseum** is a chart question answering benchmark designed to evaluate reasoning capabilities of large vision-language models
 (LVLMs) over real-world chart images. The benchmark consists of 1162 *(image, question, short answer)* tuples and exclusively targets at questions that requires non-trivial text and visual reasoning skills. The dataset is collectively annotated by a team of 13 researchers in computer science.
 
+<p align="center">
+    <img src="assets/figure-main.png" width="660">
+</p>
+
 
 ## Installation
 
@@ -63,7 +67,7 @@ Optionally, you can specify `--save_dir /path/to/save_dir` to save the evaluatio
 
 
 > [!IMPORTANT]
-> The prediction file should contain a list of strings, where each string correpsonds to an answer of a question in the dataset. The order of the answers should match the order of the questions in the dataset. Note that we require each string to contain an answer wrapped in the `<answer></answer>` tags. As our evaluation script will automatically extract the answer from the string.
+> The prediction file should contain a list of strings, where each string correpsonds to an answer of a question in the dataset. The order of the answers should match the order of the questions in the dataset. Note that we require each string to contain a *short answer* wrapped in the `<answer></answer>` tags. As our evaluation script will automatically extract the short answer from the string.
 
 ```
 [
