@@ -31,12 +31,23 @@ pip install -r requirements.txt
 
 ## Benchmark Access
 
-Our benchmark is available at Hugging Face 🤗. More benchmark details can be found [here](https://huggingface.co/datasets/lytang/ChartMuseum).
+[Our benchmark is available](https://huggingface.co/datasets/lytang/ChartMuseum) at Hugging Face 🤗. The following code snippet shows how to access the benchmark. Note that in addition to loading the dataset, you need to download the `images/` [folder](https://huggingface.co/datasets/lytang/ChartMuseum/tree/main/images) from our Hugging Face repo.
 
 
 ```python
 from datasets import load_dataset
+from huggingface_hub import snapshot_download
+
+# download the dataset
 dataset = load_dataset("lytang/ChartMuseum")
+
+# download the images
+snapshot_download(
+    repo_id="lytang/ChartMuseum",
+    repo_type="dataset",
+    allow_patterns="images/*",
+    local_dir="." # Specify the local directory where you want to save the images
+)
 ```
 
 The benchmark contains the following fields:
@@ -74,7 +85,7 @@ Optionally, you can specify `--save_dir /path/to/save_dir` to save the evaluatio
 
 
 > [!IMPORTANT]
-> The prediction file should contain a list of strings, where each string correpsonds to an answer of a question in the dataset. The order of the answers should match the order of the questions in the dataset. Note that we require each string to contain a *short answer* wrapped in the `<answer></answer>` tags. As our evaluation script will automatically extract the short answer from the string.
+> The prediction file should contain a list of strings, where each string correpsonds to an answer of a question in the dataset. The order of the answers should match the order of the questions in the dataset. Note that we require each string to contain a *short answer* wrapped in the `<answer></answer>` tags, as our evaluation script will automatically extract the short answer from the string.
 
 ```
 [
