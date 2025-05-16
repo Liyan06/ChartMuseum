@@ -7,7 +7,7 @@
 (LVLMs) over real-world chart images. The benchmark consists of 1162 *(image, question, short answer)* tuples and exclusively targets at questions that requires non-trivial text and visual reasoning skills. The dataset is collectively annotated by a team of 13 researchers in computer science.
 
 <p align="center">
-    <img src="assets/figure-main.png" width="660">
+    <img src="assets/figure-main.png" width="970">
 </p>
 
 
