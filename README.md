@@ -4,7 +4,7 @@
 ## Overview
 
 **ChartMuseum** is a chart question answering benchmark designed to evaluate reasoning capabilities of large vision-language models
-(LVLMs) over real-world chart images. The benchmark consists of 1162 *(image, question, short answer)* tuples and exclusively targets at questions that requires non-trivial text and visual reasoning skills. The dataset is collectively annotated by a team of 13 researchers in computer science.
+(LVLMs) over real-world chart images. The benchmark consists of 1162 *(image, question, short answer)* tuples and exclusively targets at questions that requires non-trivial textual and visual reasoning skills. The dataset is collectively annotated by a team of 13 researchers in computer science.
 
 <p align="center">
     <img src="assets/figure-main.png" width="970">
