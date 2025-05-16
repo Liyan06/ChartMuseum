@@ -36,20 +36,6 @@ dataset = load_dataset("lytang/ChartMuseum")
 ```
 
 The benchmark contains the following fields:
-
-```python
-DatasetDict({
-    dev: Dataset({
-        features: ['image', 'question', 'answer', 'reasoning_type', 'source', 'hash'],
-        num_rows: 162
-    })
-    test: Dataset({
-        features: ['image', 'question', 'answer', 'reasoning_type', 'source', 'hash'],
-        num_rows: 1000
-    })
-})
-```
-
 |Field| Description |
 |--|--|
 |image| an image where the question is based on|
@@ -72,13 +58,13 @@ python evaluate.py --prediction_path /path/to/predictions.json --split dev/test
 ```
 
 Optionally, you can specify `--save_dir /path/to/save_dir` to save the evaluation results. The evaluation script will extract the short answers from predictions and compare them with the ground truth answers. The evaluation script will output:
-* The cost and time spent on the evaluation. The estimated cost is \$0.03 and \$0.16 on dev and test set, respectively. The estimated evaluation time is 5s and 12s on dev and test set, respectively.
+* The cost and time spent on the evaluation. The estimated cost is \$0.03 and \$0.16 on dev and test set, respectively. The evaluation typically takes around 5s for the dev set and 12s for the test set.
 * The accuracy of the model on the dev/test set.
 
 
 The prediction file should contain a list of strings, where each string correpsonds to an answer of a question in the dataset. The order of the answers should match the order of the questions in the dataset. Note that we require each string to contain an answer wrapped in the `<answer></answer>` tags. As our evaluation script will automatically extract the answer from the string.
 
-```json
+```
 [
     "...<answer>predicted short answer 1</answer>...",
     "...<answer>predicted short answer 2</answer>...",
@@ -100,7 +86,7 @@ python evaluate.py \
 <details>
 <summary>Expected Output (shortened)</summary>
 
-```json
+```
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% • Time Elapsed 0:00:05 • Time Remaining 0:00:00                                     
 Requests: Total: 162 • Cached: 0✓ • Success: 162✓ • Failed: 0✗ • In Progress: 0⋯ • Req/min: 1703.1 • Res/min: 1703.1                                                    
                 Final Curator Statistics                
