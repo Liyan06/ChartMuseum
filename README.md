@@ -51,6 +51,13 @@ The benchmark contains the following fields:
 
 The question answering prompt we used for all models is included in [prompt.py](prompt.py).
 
+##Performance on ChartMuseum
+
+<p align="center">
+    <img src="assets/benchmark_performance.png" width="600">
+</p>
+
+
 ## Output Evaluation Instruction
 
 Once your model predictions on the benchmark are ready, we provide an evaluation script to compute the accuracy of model answers, which is very simple to run. We use `gpt-4.1-mini-2025-04-14` checkpoint from OpenAI as the LLM-as-a-Judge model for our benchmark. Make sure to set up your OpenAI API key in your environment variables.
