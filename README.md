@@ -62,7 +62,8 @@ Optionally, you can specify `--save_dir /path/to/save_dir` to save the evaluatio
 * The accuracy of the model on the dev/test set.
 
 
-The prediction file should contain a list of strings, where each string correpsonds to an answer of a question in the dataset. The order of the answers should match the order of the questions in the dataset. Note that we require each string to contain an answer wrapped in the `<answer></answer>` tags. As our evaluation script will automatically extract the answer from the string.
+> [!IMPORTANT]
+> The prediction file should contain a list of strings, where each string correpsonds to an answer of a question in the dataset. The order of the answers should match the order of the questions in the dataset. Note that we require each string to contain an answer wrapped in the `<answer></answer>` tags. As our evaluation script will automatically extract the answer from the string.
 
 ```
 [
