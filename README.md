@@ -17,7 +17,7 @@ conda create -n chartmuseum python=3.11
 conda activate chartmuseum
 
 # Clone the repository
-git clone https://github.com/username/chartmuseum.git
+git clone https://github.com/Liyan06/ChartMuseum.git
 cd chartmuseum
 
 # Install dependencies
