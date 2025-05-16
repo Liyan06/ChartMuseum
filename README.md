@@ -132,4 +132,4 @@ The inference time with our evaluation script takes 5s and 12s for the dev and t
 
 ## License
 
-Our benchmark is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en). Copyright of all included charts is retained by their original authors and sources.
+Our benchmark is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en). Copyright of all included charts is retained by their original authors and sources. Our code is licensed under [Apache 2.0](LICENSE).
