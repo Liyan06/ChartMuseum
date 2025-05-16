@@ -51,7 +51,7 @@ The benchmark contains the following fields:
 
 The question answering prompt we used for all models is included in [prompt.py](prompt.py).
 
-##Performance on ChartMuseum
+## Performance on ChartMuseum
 
 <p align="center">
     <img src="assets/benchmark_performance.png" width="600">
