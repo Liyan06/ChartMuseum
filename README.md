@@ -1,5 +1,9 @@
 # ChartMuseum
 
+Authors: Liyan Tang, Grace Kim, Xinyu Zhao, Thom Lake, Wenxuan Ding, Fangcong Yin, Prasann Singhal, Manya Wadhwa, Zeyu Leo Liu, Zayne Sprague, Ramya Namuduri, Bodun Hu, Juan Diego Rodriguez, Puyuan Peng, Greg Durrett
+
+[Leaderboard](https://chartmuseum-leaderboard.github.io) 🥇 | [Benchmark](https://huggingface.co/datasets/lytang/ChartMuseum) 🤗 | [Paper](https://arxiv.org/abs/2505.13444) 📃
+
 
 ## Overview
 
@@ -155,3 +159,19 @@ The inference time with our evaluation script takes 5s and 12s for the dev and t
 ## License
 
 Our benchmark is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en). Copyright of all included charts is retained by their original authors and sources. Our code is licensed under [Apache 2.0](LICENSE).
+
+## Citation
+
+If you found our work useful, please consider citing our work.
+
+```bibtex
+@misc{tang2025chartmuseum,
+      title={ChartMuseum: Testing Visual Reasoning Capabilities of Large Vision-Language Models}, 
+      author={Liyan Tang and Grace Kim and Xinyu Zhao and Thom Lake and Wenxuan Ding and Fangcong Yin and Prasann Singhal and Manya Wadhwa and Zeyu Leo Liu and Zayne Sprague and Ramya Namuduri and Bodun Hu and Juan Diego Rodriguez and Puyuan Peng and Greg Durrett},
+      year={2025},
+      eprint={2505.13444},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2505.13444}, 
+}
+```
