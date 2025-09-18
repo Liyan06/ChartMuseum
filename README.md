@@ -1,4 +1,4 @@
-# ChartMuseum
+# [NeurIPS 2025] ChartMuseum: Testing Visual Reasoning Capabilities of Large Vision-Language Models
 
 Authors: Liyan Tang, Grace Kim, Xinyu Zhao, Thom Lake, Wenxuan Ding, Fangcong Yin, Prasann Singhal, Manya Wadhwa, Zeyu Leo Liu, Zayne Sprague, Ramya Namuduri, Bodun Hu, Juan Diego Rodriguez, Puyuan Peng, Greg Durrett
 
