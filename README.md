@@ -68,6 +68,8 @@ The question answering prompt we used for all models is included in [prompt.py](
 
 ## Performance on ChartMuseum
 
+Human overall accuracy on ChartMuseum is **93%**, with **98.2%** on the visual reasoning questions.
+
 <p align="center">
     <img src="assets/benchmark_performance.png" width="600">
 </p>
